@@ -1,0 +1,58 @@
+<%- include('partials/header') -%>
+    <div class="container w-25 mt-2">
+        <%- include('partials/messages') -%>
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="main.css">
+                <title>MainPage</title>
+
+            </head>
+
+            <body>
+
+                <div class="box">
+                    <button>About</button>
+                    <button>Policy</button>
+                    <button>Help</button>
+                    <button>Contact</button>
+
+                </div>
+                <p>COVID-19 Vaccine Appointment Scheduer</p>
+                <!--<div class="box1">
+                    <div>
+                        <button id="btn1">Find the vaccine</button>
+                    </div>
+
+                </div>
+            -->
+                <div class="box2">
+                    <div class="box3">
+                        <p id="para">Help us determine what type of appointment needs to be scheduled.</p>
+                    </div>
+                    <div class="box4">
+                        <span id="para01">Have you received a dose of the COVID-19 vaccine before?</span>
+                    </div>
+                    <form action="">
+                        <input type="radio" name="medical" value="No">No<br>
+                        <input type="radio" name="medical" value="Yes">Yes(Pfizer or Moderna)<br>
+                    </form>
+                    <button onclick="myOnClick()">Next</button>
+                    <script>
+                          function myOnClick(){
+                              document.location.href="http://localhost:3000/dashboard01";
+                          }
+                    </script>
+                 
+                </div>
+              
+            </body>
+
+            </html>
+
+    </div>
+    <%- include('partials/footer') -%>
